@@ -3,7 +3,7 @@ package com.bradleycurran.velocadapter;
 import android.util.SparseArray;
 import android.view.View;
 
-class ViewHolder {
+public class ViewHolder {
 
     private View              mView;
 
@@ -15,7 +15,7 @@ class ViewHolder {
     }
 
     @SuppressWarnings("unchecked")
-    <T extends View> T get(int id) {
+    public <T extends View> T get(int id) {
         View view = mCache.get(id);
 
         if (view == null) {
