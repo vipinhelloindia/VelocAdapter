@@ -34,9 +34,7 @@ public abstract class VelocAdapter extends BaseAdapter {
         return view;
     }
 
-    private void bindView(Context context, View view, ViewHolder holder, int position) {}
+    protected abstract View newView(LayoutInflater inflator, int position, ViewGroup parent);
 
-    protected View newView(LayoutInflater from, int position, ViewGroup parent) {
-        return null;
-    }
+    protected abstract void bindView(Context context, View view, ViewHolder holder, int position);
 }

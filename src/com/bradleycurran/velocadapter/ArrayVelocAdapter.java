@@ -7,7 +7,7 @@ import java.util.List;
 
 import android.content.Context;
 
-public class ArrayVelocAdapter<T> extends VelocAdapter {
+public abstract class ArrayVelocAdapter<T> extends VelocAdapter {
 
     private List<T> mList;
 
