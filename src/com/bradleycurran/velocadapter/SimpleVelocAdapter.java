@@ -22,7 +22,7 @@ public abstract class SimpleVelocAdapter<T> extends ArrayVelocAdapter<T> {
     }
 
     @Override
-    protected View newView(LayoutInflater inflator, int position, ViewGroup parent) {
+    public View newView(LayoutInflater inflator, int position, ViewGroup parent) {
         return inflator.inflate(mLayoutId, parent, false);
     }
 }

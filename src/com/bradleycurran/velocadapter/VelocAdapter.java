@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-public abstract class VelocAdapter extends BaseAdapter {
+public abstract class VelocAdapter extends BaseAdapter implements ViewBinder {
 
     private Context mContext;
 
@@ -33,8 +33,4 @@ public abstract class VelocAdapter extends BaseAdapter {
 
         return view;
     }
-
-    protected abstract View newView(LayoutInflater inflator, int position, ViewGroup parent);
-
-    protected abstract void bindView(Context context, View view, ViewHolder holder, int position);
 }
